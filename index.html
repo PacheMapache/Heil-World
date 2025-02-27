@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> 卐 Halo, mein Kamerades 卐</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <title> 卐 Halo, mein Kamerades 卐</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13220969/3046716.jpg.jpg?quality=90&strip=all&crop=0%2C20.226757369615%2C100%2C51.322751322751&w=2400');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ff0000; /* Color de fondo del botón */
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
     <h1>卐 Halo, mein Kamerades 卐</h1>
-    <h1><link href="Heil Pedro" rel="https://open.spotify.com/intl-es/track/0C6tCrGdA0Qn7GvOixrY2U?si=ea55fe2ad1f54e24"></h1>
-    </body>
+    <button onclick="playSong()">Heil Pedro</button>
+
+    <script>
+        function playSong() {
+            window.open('https://open.spotify.com/intl-es/track/0C6tCrGdA0Qn7GvOixrY2U?si=ea55fe2ad1f54e24', '_blank');
+        }
+    </script>
+</body>
 </html>
