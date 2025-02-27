@@ -35,6 +35,14 @@
         function playSong() {
             window.open('https://open.spotify.com/intl-es/track/0C6tCrGdA0Qn7GvOixrY2U?si=ea55fe2ad1f54e24', '_blank');
         }
+
+        // Intentar reproducir la canción automáticamente (puede no funcionar en todos los navegadores)
+        window.onload = function() {
+            var audio = new Audio('https://p.scdn.co/mp3-preview/0c6f1c1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1'); // URL de un preview de la canción
+            audio.play().catch(function(error) {
+                console.log('Reproducción automática fallida: ' + error);
+            });
+        };
     </script>
 </body>
 </html>
